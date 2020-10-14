@@ -1,0 +1,1858 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0525.1210                               -->
+<workbook original-version='18.1' source-build='2020.2.1 (20202.20.0525.1210)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='transactions-2020-01-01-2021-01-01' inline='true' name='federated.0m07tkw07lsvxv1eazztx0hppja0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='transactions-2020-01-01-2021-01-01' name='textscan.08kyp0b0tut85e1b9v2wz10rn43b'>
+            <connection class='textscan' directory='/Users/natebender/Desktop/Graduate_School/Fall-2020/Telling-Stories-Data/Slides/DramData_Transactions' filename='transactions-2020-01-01-2021-01-01.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='transactions-2019-01-01-2020-01-01' name='textscan.0gvi95b1wh5meh18gxfgl0ukx6kk'>
+            <connection class='textscan' directory='/Users/natebender/Desktop/Graduate_School/Fall-2020/Telling-Stories-Data/Slides/DramData_Transactions' filename='transactions-2019-01-01-2020-01-01.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='transactions-2018-01-01-2019-01-01' name='textscan.1r4u5vf01obzy31cxseik05s1pwi'>
+            <connection class='textscan' directory='/Users/natebender/Desktop/Graduate_School/Fall-2020/Telling-Stories-Data/Slides/DramData_Transactions' filename='transactions-2018-01-01-2019-01-01.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' name='transactions-2020-01-01-2021-01-01.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='Date' />
+            <column datatype='datetime' name='Time' />
+            <column datatype='string' name='Time Zone' />
+            <column datatype='real' name='Gross Sales' />
+            <column datatype='real' name='Discounts' />
+            <column datatype='real' name='Net Sales' />
+            <column datatype='real' name='Gift Card Sales' />
+            <column datatype='real' name='Tax' />
+            <column datatype='real' name='Tip' />
+            <column datatype='real' name='Partial Refunds' />
+            <column datatype='real' name='Total Collected' />
+            <column datatype='string' name='Source' />
+            <column datatype='real' name='Card' />
+            <column datatype='string' name='Card Entry Methods' />
+            <column datatype='real' name='Cash' />
+            <column datatype='real' name='Square Gift Card' />
+            <column datatype='real' name='Other Tender' />
+            <column datatype='string' name='Other Tender Type' />
+            <column datatype='string' name='Other Tender Note' />
+            <column datatype='real' name='Fees' />
+            <column datatype='real' name='Net Total' />
+            <column datatype='string' name='Transaction ID' />
+            <column datatype='string' name='Payment ID' />
+            <column datatype='string' name='Card Brand' />
+            <column datatype='integer' name='PAN Suffix' />
+            <column datatype='string' name='Device Name' />
+            <column datatype='string' name='Staff Name' />
+            <column datatype='string' name='Staff ID' />
+            <column datatype='string' name='Details' />
+            <column datatype='string' name='Description' />
+            <column datatype='string' name='Event Type' />
+            <column datatype='string' name='Location' />
+            <column datatype='string' name='Dining Option' />
+            <column datatype='string' name='Customer ID' />
+            <column datatype='string' name='Customer Name' />
+            <column datatype='string' name='Customer Reference ID' />
+            <column datatype='string' name='Device Nickname' />
+            <column datatype='string' name='Deposit ID' />
+            <column datatype='date' name='Deposit Date' />
+            <column datatype='string' name='Deposit Details' />
+            <column datatype='real' name='Fee Percentage Rate' />
+            <column datatype='real' name='Fee Fixed Rate' />
+            <column datatype='string' name='Refund Reason' />
+            <column datatype='string' name='Discount Name' />
+            <column datatype='string' name='Transaction Status' />
+            <column datatype='real' name='Card - Swiped' />
+            <column datatype='real' name='Card - Keyed' />
+            <column datatype='real' name='Wallet' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.08kyp0b0tut85e1b9v2wz10rn43b' name='transactions-2020-01-01-2021-01-01.csv' table='[transactions-2020-01-01-2021-01-01#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='datetime' name='Time' ordinal='1' />
+              <column datatype='string' name='Time Zone' ordinal='2' />
+              <column datatype='real' name='Gross Sales' ordinal='3' />
+              <column datatype='real' name='Discounts' ordinal='4' />
+              <column datatype='real' name='Net Sales' ordinal='5' />
+              <column datatype='real' name='Gift Card Sales' ordinal='6' />
+              <column datatype='real' name='Tax' ordinal='7' />
+              <column datatype='real' name='Tip' ordinal='8' />
+              <column datatype='real' name='Partial Refunds' ordinal='9' />
+              <column datatype='real' name='Total Collected' ordinal='10' />
+              <column datatype='string' name='Source' ordinal='11' />
+              <column datatype='real' name='Card' ordinal='12' />
+              <column datatype='string' name='Card Entry Methods' ordinal='13' />
+              <column datatype='real' name='Cash' ordinal='14' />
+              <column datatype='real' name='Square Gift Card' ordinal='15' />
+              <column datatype='real' name='Other Tender' ordinal='16' />
+              <column datatype='string' name='Other Tender Type' ordinal='17' />
+              <column datatype='string' name='Other Tender Note' ordinal='18' />
+              <column datatype='real' name='Fees' ordinal='19' />
+              <column datatype='real' name='Net Total' ordinal='20' />
+              <column datatype='string' name='Transaction ID' ordinal='21' />
+              <column datatype='string' name='Payment ID' ordinal='22' />
+              <column datatype='string' name='Card Brand' ordinal='23' />
+              <column datatype='integer' name='PAN Suffix' ordinal='24' />
+              <column datatype='string' name='Device Name' ordinal='25' />
+              <column datatype='string' name='Staff Name' ordinal='26' />
+              <column datatype='string' name='Staff ID' ordinal='27' />
+              <column datatype='string' name='Details' ordinal='28' />
+              <column datatype='string' name='Description' ordinal='29' />
+              <column datatype='string' name='Event Type' ordinal='30' />
+              <column datatype='string' name='Location' ordinal='31' />
+              <column datatype='string' name='Dining Option' ordinal='32' />
+              <column datatype='string' name='Customer ID' ordinal='33' />
+              <column datatype='string' name='Customer Name' ordinal='34' />
+              <column datatype='string' name='Customer Reference ID' ordinal='35' />
+              <column datatype='string' name='Device Nickname' ordinal='36' />
+              <column datatype='string' name='Deposit ID' ordinal='37' />
+              <column datatype='date' name='Deposit Date' ordinal='38' />
+              <column datatype='string' name='Deposit Details' ordinal='39' />
+              <column datatype='real' name='Fee Percentage Rate' ordinal='40' />
+              <column datatype='real' name='Fee Fixed Rate' ordinal='41' />
+              <column datatype='string' name='Refund Reason' ordinal='42' />
+              <column datatype='string' name='Discount Name' ordinal='43' />
+              <column datatype='string' name='Transaction Status' ordinal='44' />
+            </columns>
+          </relation>
+          <relation connection='textscan.08kyp0b0tut85e1b9v2wz10rn43b' name='transactions-2019-01-01-2020-01-01.csv' table='[transactions-2019-01-01-2020-01-01#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='datetime' name='Time' ordinal='1' />
+              <column datatype='string' name='Time Zone' ordinal='2' />
+              <column datatype='real' name='Gross Sales' ordinal='3' />
+              <column datatype='real' name='Discounts' ordinal='4' />
+              <column datatype='real' name='Net Sales' ordinal='5' />
+              <column datatype='real' name='Gift Card Sales' ordinal='6' />
+              <column datatype='real' name='Tax' ordinal='7' />
+              <column datatype='real' name='Tip' ordinal='8' />
+              <column datatype='real' name='Partial Refunds' ordinal='9' />
+              <column datatype='real' name='Total Collected' ordinal='10' />
+              <column datatype='string' name='Source' ordinal='11' />
+              <column datatype='real' name='Card' ordinal='12' />
+              <column datatype='string' name='Card Entry Methods' ordinal='13' />
+              <column datatype='real' name='Cash' ordinal='14' />
+              <column datatype='real' name='Square Gift Card' ordinal='15' />
+              <column datatype='real' name='Other Tender' ordinal='16' />
+              <column datatype='string' name='Other Tender Type' ordinal='17' />
+              <column datatype='string' name='Other Tender Note' ordinal='18' />
+              <column datatype='real' name='Fees' ordinal='19' />
+              <column datatype='real' name='Net Total' ordinal='20' />
+              <column datatype='string' name='Transaction ID' ordinal='21' />
+              <column datatype='string' name='Payment ID' ordinal='22' />
+              <column datatype='string' name='Card Brand' ordinal='23' />
+              <column datatype='integer' name='PAN Suffix' ordinal='24' />
+              <column datatype='string' name='Device Name' ordinal='25' />
+              <column datatype='string' name='Staff Name' ordinal='26' />
+              <column datatype='string' name='Staff ID' ordinal='27' />
+              <column datatype='string' name='Details' ordinal='28' />
+              <column datatype='string' name='Description' ordinal='29' />
+              <column datatype='string' name='Event Type' ordinal='30' />
+              <column datatype='string' name='Location' ordinal='31' />
+              <column datatype='string' name='Dining Option' ordinal='32' />
+              <column datatype='string' name='Customer ID' ordinal='33' />
+              <column datatype='string' name='Customer Name' ordinal='34' />
+              <column datatype='string' name='Customer Reference ID' ordinal='35' />
+              <column datatype='string' name='Device Nickname' ordinal='36' />
+              <column datatype='string' name='Deposit ID' ordinal='37' />
+              <column datatype='date' name='Deposit Date' ordinal='38' />
+              <column datatype='string' name='Deposit Details' ordinal='39' />
+              <column datatype='real' name='Fee Percentage Rate' ordinal='40' />
+              <column datatype='real' name='Fee Fixed Rate' ordinal='41' />
+              <column datatype='string' name='Refund Reason' ordinal='42' />
+              <column datatype='string' name='Discount Name' ordinal='43' />
+              <column datatype='string' name='Transaction Status' ordinal='44' />
+            </columns>
+          </relation>
+          <relation connection='textscan.08kyp0b0tut85e1b9v2wz10rn43b' name='transactions-2018-01-01-2019-01-01.csv' table='[transactions-2018-01-01-2019-01-01#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='datetime' name='Time' ordinal='1' />
+              <column datatype='string' name='Time Zone' ordinal='2' />
+              <column datatype='real' name='Gross Sales' ordinal='3' />
+              <column datatype='real' name='Discounts' ordinal='4' />
+              <column datatype='real' name='Net Sales' ordinal='5' />
+              <column datatype='real' name='Gift Card Sales' ordinal='6' />
+              <column datatype='real' name='Tax' ordinal='7' />
+              <column datatype='real' name='Tip' ordinal='8' />
+              <column datatype='real' name='Partial Refunds' ordinal='9' />
+              <column datatype='real' name='Total Collected' ordinal='10' />
+              <column datatype='string' name='Source' ordinal='11' />
+              <column datatype='real' name='Card' ordinal='12' />
+              <column datatype='string' name='Card Entry Methods' ordinal='13' />
+              <column datatype='real' name='Cash' ordinal='14' />
+              <column datatype='real' name='Square Gift Card' ordinal='15' />
+              <column datatype='real' name='Other Tender' ordinal='16' />
+              <column datatype='string' name='Other Tender Type' ordinal='17' />
+              <column datatype='string' name='Other Tender Note' ordinal='18' />
+              <column datatype='real' name='Fees' ordinal='19' />
+              <column datatype='real' name='Net Total' ordinal='20' />
+              <column datatype='string' name='Transaction ID' ordinal='21' />
+              <column datatype='string' name='Payment ID' ordinal='22' />
+              <column datatype='string' name='Card Brand' ordinal='23' />
+              <column datatype='integer' name='PAN Suffix' ordinal='24' />
+              <column datatype='string' name='Device Name' ordinal='25' />
+              <column datatype='string' name='Staff Name' ordinal='26' />
+              <column datatype='string' name='Staff ID' ordinal='27' />
+              <column datatype='string' name='Details' ordinal='28' />
+              <column datatype='string' name='Description' ordinal='29' />
+              <column datatype='string' name='Event Type' ordinal='30' />
+              <column datatype='string' name='Location' ordinal='31' />
+              <column datatype='string' name='Dining Option' ordinal='32' />
+              <column datatype='string' name='Customer ID' ordinal='33' />
+              <column datatype='string' name='Customer Name' ordinal='34' />
+              <column datatype='string' name='Customer Reference ID' ordinal='35' />
+              <column datatype='string' name='Device Nickname' ordinal='36' />
+              <column datatype='string' name='Deposit ID' ordinal='37' />
+              <column datatype='date' name='Deposit Date' ordinal='38' />
+              <column datatype='string' name='Deposit Details' ordinal='39' />
+              <column datatype='real' name='Fee Percentage Rate' ordinal='40' />
+              <column datatype='real' name='Fee Fixed Rate' ordinal='41' />
+              <column datatype='string' name='Refund Reason' ordinal='42' />
+            </columns>
+          </relation>
+          <relation connection='textscan.08kyp0b0tut85e1b9v2wz10rn43b' name='transactions-2017-01-01-2018-01-01.csv' table='[transactions-2017-01-01-2018-01-01#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='datetime' name='Time' ordinal='1' />
+              <column datatype='string' name='Time Zone' ordinal='2' />
+              <column datatype='real' name='Gross Sales' ordinal='3' />
+              <column datatype='real' name='Discounts' ordinal='4' />
+              <column datatype='real' name='Net Sales' ordinal='5' />
+              <column datatype='real' name='Gift Card Sales' ordinal='6' />
+              <column datatype='real' name='Tax' ordinal='7' />
+              <column datatype='real' name='Tip' ordinal='8' />
+              <column datatype='real' name='Partial Refunds' ordinal='9' />
+              <column datatype='real' name='Total Collected' ordinal='10' />
+              <column datatype='string' name='Source' ordinal='11' />
+              <column datatype='real' name='Card' ordinal='12' />
+              <column datatype='string' name='Card Entry Methods' ordinal='13' />
+              <column datatype='real' name='Cash' ordinal='14' />
+              <column datatype='real' name='Square Gift Card' ordinal='15' />
+              <column datatype='real' name='Other Tender' ordinal='16' />
+              <column datatype='string' name='Other Tender Type' ordinal='17' />
+              <column datatype='string' name='Other Tender Note' ordinal='18' />
+              <column datatype='real' name='Fees' ordinal='19' />
+              <column datatype='real' name='Net Total' ordinal='20' />
+              <column datatype='string' name='Transaction ID' ordinal='21' />
+              <column datatype='string' name='Payment ID' ordinal='22' />
+              <column datatype='string' name='Card Brand' ordinal='23' />
+              <column datatype='integer' name='PAN Suffix' ordinal='24' />
+              <column datatype='string' name='Device Name' ordinal='25' />
+              <column datatype='string' name='Staff Name' ordinal='26' />
+              <column datatype='string' name='Staff ID' ordinal='27' />
+              <column datatype='string' name='Details' ordinal='28' />
+              <column datatype='string' name='Description' ordinal='29' />
+              <column datatype='string' name='Event Type' ordinal='30' />
+              <column datatype='string' name='Location' ordinal='31' />
+              <column datatype='string' name='Dining Option' ordinal='32' />
+              <column datatype='string' name='Customer ID' ordinal='33' />
+              <column datatype='string' name='Customer Name' ordinal='34' />
+              <column datatype='string' name='Customer Reference ID' ordinal='35' />
+              <column datatype='string' name='Device Nickname' ordinal='36' />
+              <column datatype='string' name='Deposit ID' ordinal='37' />
+              <column datatype='date' name='Deposit Date' ordinal='38' />
+              <column datatype='string' name='Deposit Details' ordinal='39' />
+              <column datatype='real' name='Fee Percentage Rate' ordinal='40' />
+              <column datatype='real' name='Fee Fixed Rate' ordinal='41' />
+            </columns>
+          </relation>
+          <relation connection='textscan.08kyp0b0tut85e1b9v2wz10rn43b' name='transactions-2016-01-01-2017-01-01.csv' table='[transactions-2016-01-01-2017-01-01#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='datetime' name='Time' ordinal='1' />
+              <column datatype='string' name='Time Zone' ordinal='2' />
+              <column datatype='real' name='Gross Sales' ordinal='3' />
+              <column datatype='real' name='Discounts' ordinal='4' />
+              <column datatype='real' name='Net Sales' ordinal='5' />
+              <column datatype='real' name='Gift Card Sales' ordinal='6' />
+              <column datatype='real' name='Tax' ordinal='7' />
+              <column datatype='real' name='Tip' ordinal='8' />
+              <column datatype='real' name='Partial Refunds' ordinal='9' />
+              <column datatype='real' name='Total Collected' ordinal='10' />
+              <column datatype='string' name='Source' ordinal='11' />
+              <column datatype='real' name='Card' ordinal='12' />
+              <column datatype='string' name='Card Entry Methods' ordinal='13' />
+              <column datatype='real' name='Cash' ordinal='14' />
+              <column datatype='real' name='Square Gift Card' ordinal='15' />
+              <column datatype='real' name='Other Tender' ordinal='16' />
+              <column datatype='string' name='Other Tender Type' ordinal='17' />
+              <column datatype='string' name='Other Tender Note' ordinal='18' />
+              <column datatype='real' name='Fees' ordinal='19' />
+              <column datatype='real' name='Net Total' ordinal='20' />
+              <column datatype='string' name='Transaction ID' ordinal='21' />
+              <column datatype='string' name='Payment ID' ordinal='22' />
+              <column datatype='string' name='Card Brand' ordinal='23' />
+              <column datatype='integer' name='PAN Suffix' ordinal='24' />
+              <column datatype='string' name='Device Name' ordinal='25' />
+              <column datatype='string' name='Staff Name' ordinal='26' />
+              <column datatype='string' name='Staff ID' ordinal='27' />
+              <column datatype='string' name='Details' ordinal='28' />
+              <column datatype='string' name='Description' ordinal='29' />
+              <column datatype='string' name='Event Type' ordinal='30' />
+              <column datatype='string' name='Location' ordinal='31' />
+              <column datatype='string' name='Dining Option' ordinal='32' />
+              <column datatype='string' name='Customer ID' ordinal='33' />
+              <column datatype='string' name='Customer Name' ordinal='34' />
+              <column datatype='string' name='Customer Reference ID' ordinal='35' />
+              <column datatype='string' name='Device Nickname' ordinal='36' />
+              <column datatype='string' name='Deposit ID' ordinal='37' />
+              <column datatype='date' name='Deposit Date' ordinal='38' />
+              <column datatype='string' name='Deposit Details' ordinal='39' />
+              <column datatype='real' name='Fee Percentage Rate' ordinal='40' />
+              <column datatype='real' name='Fee Fixed Rate' ordinal='41' />
+            </columns>
+          </relation>
+          <relation connection='textscan.08kyp0b0tut85e1b9v2wz10rn43b' name='transactions-2015-01-01-2016-01-01.csv' table='[transactions-2015-01-01-2016-01-01#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='datetime' name='Time' ordinal='1' />
+              <column datatype='string' name='Time Zone' ordinal='2' />
+              <column datatype='real' name='Gross Sales' ordinal='3' />
+              <column datatype='real' name='Discounts' ordinal='4' />
+              <column datatype='real' name='Net Sales' ordinal='5' />
+              <column datatype='real' name='Gift Card Sales' ordinal='6' />
+              <column datatype='real' name='Tax' ordinal='7' />
+              <column datatype='real' name='Tip' ordinal='8' />
+              <column datatype='real' name='Partial Refunds' ordinal='9' />
+              <column datatype='real' name='Total Collected' ordinal='10' />
+              <column datatype='real' name='Card - Swiped' ordinal='11' />
+              <column datatype='real' name='Card - Keyed' ordinal='12' />
+              <column datatype='real' name='Cash' ordinal='13' />
+              <column datatype='real' name='Wallet' ordinal='14' />
+              <column datatype='real' name='Square Gift Card' ordinal='15' />
+              <column datatype='real' name='Other Tender' ordinal='16' />
+              <column datatype='string' name='Other Tender Type' ordinal='17' />
+              <column datatype='string' name='Other Tender Note' ordinal='18' />
+              <column datatype='real' name='Fees' ordinal='19' />
+              <column datatype='real' name='Net Total' ordinal='20' />
+              <column datatype='string' name='Transaction ID' ordinal='21' />
+              <column datatype='string' name='Payment ID' ordinal='22' />
+              <column datatype='string' name='Card Brand' ordinal='23' />
+              <column datatype='integer' name='PAN Suffix' ordinal='24' />
+              <column datatype='string' name='Device Name' ordinal='25' />
+              <column datatype='string' name='Staff Name' ordinal='26' />
+              <column datatype='string' name='Staff ID' ordinal='27' />
+              <column datatype='string' name='Details' ordinal='28' />
+              <column datatype='string' name='Description' ordinal='29' />
+              <column datatype='string' name='Event Type' ordinal='30' />
+              <column datatype='string' name='Location' ordinal='31' />
+              <column datatype='string' name='Dining Option' ordinal='32' />
+              <column datatype='string' name='Customer ID' ordinal='33' />
+              <column datatype='string' name='Customer Name' ordinal='34' />
+              <column datatype='string' name='Customer Reference ID' ordinal='35' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation all='true' name='transactions-2020-01-01-2021-01-01.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='Date' />
+            <column datatype='datetime' name='Time' />
+            <column datatype='string' name='Time Zone' />
+            <column datatype='real' name='Gross Sales' />
+            <column datatype='real' name='Discounts' />
+            <column datatype='real' name='Net Sales' />
+            <column datatype='real' name='Gift Card Sales' />
+            <column datatype='real' name='Tax' />
+            <column datatype='real' name='Tip' />
+            <column datatype='real' name='Partial Refunds' />
+            <column datatype='real' name='Total Collected' />
+            <column datatype='string' name='Source' />
+            <column datatype='real' name='Card' />
+            <column datatype='string' name='Card Entry Methods' />
+            <column datatype='real' name='Cash' />
+            <column datatype='real' name='Square Gift Card' />
+            <column datatype='real' name='Other Tender' />
+            <column datatype='string' name='Other Tender Type' />
+            <column datatype='string' name='Other Tender Note' />
+            <column datatype='real' name='Fees' />
+            <column datatype='real' name='Net Total' />
+            <column datatype='string' name='Transaction ID' />
+            <column datatype='string' name='Payment ID' />
+            <column datatype='string' name='Card Brand' />
+            <column datatype='integer' name='PAN Suffix' />
+            <column datatype='string' name='Device Name' />
+            <column datatype='string' name='Staff Name' />
+            <column datatype='string' name='Staff ID' />
+            <column datatype='string' name='Details' />
+            <column datatype='string' name='Description' />
+            <column datatype='string' name='Event Type' />
+            <column datatype='string' name='Location' />
+            <column datatype='string' name='Dining Option' />
+            <column datatype='string' name='Customer ID' />
+            <column datatype='string' name='Customer Name' />
+            <column datatype='string' name='Customer Reference ID' />
+            <column datatype='string' name='Device Nickname' />
+            <column datatype='string' name='Deposit ID' />
+            <column datatype='date' name='Deposit Date' />
+            <column datatype='string' name='Deposit Details' />
+            <column datatype='real' name='Fee Percentage Rate' />
+            <column datatype='real' name='Fee Fixed Rate' />
+            <column datatype='string' name='Refund Reason' />
+            <column datatype='string' name='Discount Name' />
+            <column datatype='string' name='Transaction Status' />
+            <column datatype='real' name='Card - Swiped' />
+            <column datatype='real' name='Card - Keyed' />
+            <column datatype='real' name='Wallet' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.08kyp0b0tut85e1b9v2wz10rn43b' name='transactions-2020-01-01-2021-01-01.csv' table='[transactions-2020-01-01-2021-01-01#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='datetime' name='Time' ordinal='1' />
+              <column datatype='string' name='Time Zone' ordinal='2' />
+              <column datatype='real' name='Gross Sales' ordinal='3' />
+              <column datatype='real' name='Discounts' ordinal='4' />
+              <column datatype='real' name='Net Sales' ordinal='5' />
+              <column datatype='real' name='Gift Card Sales' ordinal='6' />
+              <column datatype='real' name='Tax' ordinal='7' />
+              <column datatype='real' name='Tip' ordinal='8' />
+              <column datatype='real' name='Partial Refunds' ordinal='9' />
+              <column datatype='real' name='Total Collected' ordinal='10' />
+              <column datatype='string' name='Source' ordinal='11' />
+              <column datatype='real' name='Card' ordinal='12' />
+              <column datatype='string' name='Card Entry Methods' ordinal='13' />
+              <column datatype='real' name='Cash' ordinal='14' />
+              <column datatype='real' name='Square Gift Card' ordinal='15' />
+              <column datatype='real' name='Other Tender' ordinal='16' />
+              <column datatype='string' name='Other Tender Type' ordinal='17' />
+              <column datatype='string' name='Other Tender Note' ordinal='18' />
+              <column datatype='real' name='Fees' ordinal='19' />
+              <column datatype='real' name='Net Total' ordinal='20' />
+              <column datatype='string' name='Transaction ID' ordinal='21' />
+              <column datatype='string' name='Payment ID' ordinal='22' />
+              <column datatype='string' name='Card Brand' ordinal='23' />
+              <column datatype='integer' name='PAN Suffix' ordinal='24' />
+              <column datatype='string' name='Device Name' ordinal='25' />
+              <column datatype='string' name='Staff Name' ordinal='26' />
+              <column datatype='string' name='Staff ID' ordinal='27' />
+              <column datatype='string' name='Details' ordinal='28' />
+              <column datatype='string' name='Description' ordinal='29' />
+              <column datatype='string' name='Event Type' ordinal='30' />
+              <column datatype='string' name='Location' ordinal='31' />
+              <column datatype='string' name='Dining Option' ordinal='32' />
+              <column datatype='string' name='Customer ID' ordinal='33' />
+              <column datatype='string' name='Customer Name' ordinal='34' />
+              <column datatype='string' name='Customer Reference ID' ordinal='35' />
+              <column datatype='string' name='Device Nickname' ordinal='36' />
+              <column datatype='string' name='Deposit ID' ordinal='37' />
+              <column datatype='date' name='Deposit Date' ordinal='38' />
+              <column datatype='string' name='Deposit Details' ordinal='39' />
+              <column datatype='real' name='Fee Percentage Rate' ordinal='40' />
+              <column datatype='real' name='Fee Fixed Rate' ordinal='41' />
+              <column datatype='string' name='Refund Reason' ordinal='42' />
+              <column datatype='string' name='Discount Name' ordinal='43' />
+              <column datatype='string' name='Transaction Status' ordinal='44' />
+            </columns>
+          </relation>
+          <relation connection='textscan.08kyp0b0tut85e1b9v2wz10rn43b' name='transactions-2019-01-01-2020-01-01.csv' table='[transactions-2019-01-01-2020-01-01#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='datetime' name='Time' ordinal='1' />
+              <column datatype='string' name='Time Zone' ordinal='2' />
+              <column datatype='real' name='Gross Sales' ordinal='3' />
+              <column datatype='real' name='Discounts' ordinal='4' />
+              <column datatype='real' name='Net Sales' ordinal='5' />
+              <column datatype='real' name='Gift Card Sales' ordinal='6' />
+              <column datatype='real' name='Tax' ordinal='7' />
+              <column datatype='real' name='Tip' ordinal='8' />
+              <column datatype='real' name='Partial Refunds' ordinal='9' />
+              <column datatype='real' name='Total Collected' ordinal='10' />
+              <column datatype='string' name='Source' ordinal='11' />
+              <column datatype='real' name='Card' ordinal='12' />
+              <column datatype='string' name='Card Entry Methods' ordinal='13' />
+              <column datatype='real' name='Cash' ordinal='14' />
+              <column datatype='real' name='Square Gift Card' ordinal='15' />
+              <column datatype='real' name='Other Tender' ordinal='16' />
+              <column datatype='string' name='Other Tender Type' ordinal='17' />
+              <column datatype='string' name='Other Tender Note' ordinal='18' />
+              <column datatype='real' name='Fees' ordinal='19' />
+              <column datatype='real' name='Net Total' ordinal='20' />
+              <column datatype='string' name='Transaction ID' ordinal='21' />
+              <column datatype='string' name='Payment ID' ordinal='22' />
+              <column datatype='string' name='Card Brand' ordinal='23' />
+              <column datatype='integer' name='PAN Suffix' ordinal='24' />
+              <column datatype='string' name='Device Name' ordinal='25' />
+              <column datatype='string' name='Staff Name' ordinal='26' />
+              <column datatype='string' name='Staff ID' ordinal='27' />
+              <column datatype='string' name='Details' ordinal='28' />
+              <column datatype='string' name='Description' ordinal='29' />
+              <column datatype='string' name='Event Type' ordinal='30' />
+              <column datatype='string' name='Location' ordinal='31' />
+              <column datatype='string' name='Dining Option' ordinal='32' />
+              <column datatype='string' name='Customer ID' ordinal='33' />
+              <column datatype='string' name='Customer Name' ordinal='34' />
+              <column datatype='string' name='Customer Reference ID' ordinal='35' />
+              <column datatype='string' name='Device Nickname' ordinal='36' />
+              <column datatype='string' name='Deposit ID' ordinal='37' />
+              <column datatype='date' name='Deposit Date' ordinal='38' />
+              <column datatype='string' name='Deposit Details' ordinal='39' />
+              <column datatype='real' name='Fee Percentage Rate' ordinal='40' />
+              <column datatype='real' name='Fee Fixed Rate' ordinal='41' />
+              <column datatype='string' name='Refund Reason' ordinal='42' />
+              <column datatype='string' name='Discount Name' ordinal='43' />
+              <column datatype='string' name='Transaction Status' ordinal='44' />
+            </columns>
+          </relation>
+          <relation connection='textscan.08kyp0b0tut85e1b9v2wz10rn43b' name='transactions-2018-01-01-2019-01-01.csv' table='[transactions-2018-01-01-2019-01-01#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='datetime' name='Time' ordinal='1' />
+              <column datatype='string' name='Time Zone' ordinal='2' />
+              <column datatype='real' name='Gross Sales' ordinal='3' />
+              <column datatype='real' name='Discounts' ordinal='4' />
+              <column datatype='real' name='Net Sales' ordinal='5' />
+              <column datatype='real' name='Gift Card Sales' ordinal='6' />
+              <column datatype='real' name='Tax' ordinal='7' />
+              <column datatype='real' name='Tip' ordinal='8' />
+              <column datatype='real' name='Partial Refunds' ordinal='9' />
+              <column datatype='real' name='Total Collected' ordinal='10' />
+              <column datatype='string' name='Source' ordinal='11' />
+              <column datatype='real' name='Card' ordinal='12' />
+              <column datatype='string' name='Card Entry Methods' ordinal='13' />
+              <column datatype='real' name='Cash' ordinal='14' />
+              <column datatype='real' name='Square Gift Card' ordinal='15' />
+              <column datatype='real' name='Other Tender' ordinal='16' />
+              <column datatype='string' name='Other Tender Type' ordinal='17' />
+              <column datatype='string' name='Other Tender Note' ordinal='18' />
+              <column datatype='real' name='Fees' ordinal='19' />
+              <column datatype='real' name='Net Total' ordinal='20' />
+              <column datatype='string' name='Transaction ID' ordinal='21' />
+              <column datatype='string' name='Payment ID' ordinal='22' />
+              <column datatype='string' name='Card Brand' ordinal='23' />
+              <column datatype='integer' name='PAN Suffix' ordinal='24' />
+              <column datatype='string' name='Device Name' ordinal='25' />
+              <column datatype='string' name='Staff Name' ordinal='26' />
+              <column datatype='string' name='Staff ID' ordinal='27' />
+              <column datatype='string' name='Details' ordinal='28' />
+              <column datatype='string' name='Description' ordinal='29' />
+              <column datatype='string' name='Event Type' ordinal='30' />
+              <column datatype='string' name='Location' ordinal='31' />
+              <column datatype='string' name='Dining Option' ordinal='32' />
+              <column datatype='string' name='Customer ID' ordinal='33' />
+              <column datatype='string' name='Customer Name' ordinal='34' />
+              <column datatype='string' name='Customer Reference ID' ordinal='35' />
+              <column datatype='string' name='Device Nickname' ordinal='36' />
+              <column datatype='string' name='Deposit ID' ordinal='37' />
+              <column datatype='date' name='Deposit Date' ordinal='38' />
+              <column datatype='string' name='Deposit Details' ordinal='39' />
+              <column datatype='real' name='Fee Percentage Rate' ordinal='40' />
+              <column datatype='real' name='Fee Fixed Rate' ordinal='41' />
+              <column datatype='string' name='Refund Reason' ordinal='42' />
+            </columns>
+          </relation>
+          <relation connection='textscan.08kyp0b0tut85e1b9v2wz10rn43b' name='transactions-2017-01-01-2018-01-01.csv' table='[transactions-2017-01-01-2018-01-01#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='datetime' name='Time' ordinal='1' />
+              <column datatype='string' name='Time Zone' ordinal='2' />
+              <column datatype='real' name='Gross Sales' ordinal='3' />
+              <column datatype='real' name='Discounts' ordinal='4' />
+              <column datatype='real' name='Net Sales' ordinal='5' />
+              <column datatype='real' name='Gift Card Sales' ordinal='6' />
+              <column datatype='real' name='Tax' ordinal='7' />
+              <column datatype='real' name='Tip' ordinal='8' />
+              <column datatype='real' name='Partial Refunds' ordinal='9' />
+              <column datatype='real' name='Total Collected' ordinal='10' />
+              <column datatype='string' name='Source' ordinal='11' />
+              <column datatype='real' name='Card' ordinal='12' />
+              <column datatype='string' name='Card Entry Methods' ordinal='13' />
+              <column datatype='real' name='Cash' ordinal='14' />
+              <column datatype='real' name='Square Gift Card' ordinal='15' />
+              <column datatype='real' name='Other Tender' ordinal='16' />
+              <column datatype='string' name='Other Tender Type' ordinal='17' />
+              <column datatype='string' name='Other Tender Note' ordinal='18' />
+              <column datatype='real' name='Fees' ordinal='19' />
+              <column datatype='real' name='Net Total' ordinal='20' />
+              <column datatype='string' name='Transaction ID' ordinal='21' />
+              <column datatype='string' name='Payment ID' ordinal='22' />
+              <column datatype='string' name='Card Brand' ordinal='23' />
+              <column datatype='integer' name='PAN Suffix' ordinal='24' />
+              <column datatype='string' name='Device Name' ordinal='25' />
+              <column datatype='string' name='Staff Name' ordinal='26' />
+              <column datatype='string' name='Staff ID' ordinal='27' />
+              <column datatype='string' name='Details' ordinal='28' />
+              <column datatype='string' name='Description' ordinal='29' />
+              <column datatype='string' name='Event Type' ordinal='30' />
+              <column datatype='string' name='Location' ordinal='31' />
+              <column datatype='string' name='Dining Option' ordinal='32' />
+              <column datatype='string' name='Customer ID' ordinal='33' />
+              <column datatype='string' name='Customer Name' ordinal='34' />
+              <column datatype='string' name='Customer Reference ID' ordinal='35' />
+              <column datatype='string' name='Device Nickname' ordinal='36' />
+              <column datatype='string' name='Deposit ID' ordinal='37' />
+              <column datatype='date' name='Deposit Date' ordinal='38' />
+              <column datatype='string' name='Deposit Details' ordinal='39' />
+              <column datatype='real' name='Fee Percentage Rate' ordinal='40' />
+              <column datatype='real' name='Fee Fixed Rate' ordinal='41' />
+            </columns>
+          </relation>
+          <relation connection='textscan.08kyp0b0tut85e1b9v2wz10rn43b' name='transactions-2016-01-01-2017-01-01.csv' table='[transactions-2016-01-01-2017-01-01#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='datetime' name='Time' ordinal='1' />
+              <column datatype='string' name='Time Zone' ordinal='2' />
+              <column datatype='real' name='Gross Sales' ordinal='3' />
+              <column datatype='real' name='Discounts' ordinal='4' />
+              <column datatype='real' name='Net Sales' ordinal='5' />
+              <column datatype='real' name='Gift Card Sales' ordinal='6' />
+              <column datatype='real' name='Tax' ordinal='7' />
+              <column datatype='real' name='Tip' ordinal='8' />
+              <column datatype='real' name='Partial Refunds' ordinal='9' />
+              <column datatype='real' name='Total Collected' ordinal='10' />
+              <column datatype='string' name='Source' ordinal='11' />
+              <column datatype='real' name='Card' ordinal='12' />
+              <column datatype='string' name='Card Entry Methods' ordinal='13' />
+              <column datatype='real' name='Cash' ordinal='14' />
+              <column datatype='real' name='Square Gift Card' ordinal='15' />
+              <column datatype='real' name='Other Tender' ordinal='16' />
+              <column datatype='string' name='Other Tender Type' ordinal='17' />
+              <column datatype='string' name='Other Tender Note' ordinal='18' />
+              <column datatype='real' name='Fees' ordinal='19' />
+              <column datatype='real' name='Net Total' ordinal='20' />
+              <column datatype='string' name='Transaction ID' ordinal='21' />
+              <column datatype='string' name='Payment ID' ordinal='22' />
+              <column datatype='string' name='Card Brand' ordinal='23' />
+              <column datatype='integer' name='PAN Suffix' ordinal='24' />
+              <column datatype='string' name='Device Name' ordinal='25' />
+              <column datatype='string' name='Staff Name' ordinal='26' />
+              <column datatype='string' name='Staff ID' ordinal='27' />
+              <column datatype='string' name='Details' ordinal='28' />
+              <column datatype='string' name='Description' ordinal='29' />
+              <column datatype='string' name='Event Type' ordinal='30' />
+              <column datatype='string' name='Location' ordinal='31' />
+              <column datatype='string' name='Dining Option' ordinal='32' />
+              <column datatype='string' name='Customer ID' ordinal='33' />
+              <column datatype='string' name='Customer Name' ordinal='34' />
+              <column datatype='string' name='Customer Reference ID' ordinal='35' />
+              <column datatype='string' name='Device Nickname' ordinal='36' />
+              <column datatype='string' name='Deposit ID' ordinal='37' />
+              <column datatype='date' name='Deposit Date' ordinal='38' />
+              <column datatype='string' name='Deposit Details' ordinal='39' />
+              <column datatype='real' name='Fee Percentage Rate' ordinal='40' />
+              <column datatype='real' name='Fee Fixed Rate' ordinal='41' />
+            </columns>
+          </relation>
+          <relation connection='textscan.08kyp0b0tut85e1b9v2wz10rn43b' name='transactions-2015-01-01-2016-01-01.csv' table='[transactions-2015-01-01-2016-01-01#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='datetime' name='Time' ordinal='1' />
+              <column datatype='string' name='Time Zone' ordinal='2' />
+              <column datatype='real' name='Gross Sales' ordinal='3' />
+              <column datatype='real' name='Discounts' ordinal='4' />
+              <column datatype='real' name='Net Sales' ordinal='5' />
+              <column datatype='real' name='Gift Card Sales' ordinal='6' />
+              <column datatype='real' name='Tax' ordinal='7' />
+              <column datatype='real' name='Tip' ordinal='8' />
+              <column datatype='real' name='Partial Refunds' ordinal='9' />
+              <column datatype='real' name='Total Collected' ordinal='10' />
+              <column datatype='real' name='Card - Swiped' ordinal='11' />
+              <column datatype='real' name='Card - Keyed' ordinal='12' />
+              <column datatype='real' name='Cash' ordinal='13' />
+              <column datatype='real' name='Wallet' ordinal='14' />
+              <column datatype='real' name='Square Gift Card' ordinal='15' />
+              <column datatype='real' name='Other Tender' ordinal='16' />
+              <column datatype='string' name='Other Tender Type' ordinal='17' />
+              <column datatype='string' name='Other Tender Note' ordinal='18' />
+              <column datatype='real' name='Fees' ordinal='19' />
+              <column datatype='real' name='Net Total' ordinal='20' />
+              <column datatype='string' name='Transaction ID' ordinal='21' />
+              <column datatype='string' name='Payment ID' ordinal='22' />
+              <column datatype='string' name='Card Brand' ordinal='23' />
+              <column datatype='integer' name='PAN Suffix' ordinal='24' />
+              <column datatype='string' name='Device Name' ordinal='25' />
+              <column datatype='string' name='Staff Name' ordinal='26' />
+              <column datatype='string' name='Staff ID' ordinal='27' />
+              <column datatype='string' name='Details' ordinal='28' />
+              <column datatype='string' name='Description' ordinal='29' />
+              <column datatype='string' name='Event Type' ordinal='30' />
+              <column datatype='string' name='Location' ordinal='31' />
+              <column datatype='string' name='Dining Option' ordinal='32' />
+              <column datatype='string' name='Customer ID' ordinal='33' />
+              <column datatype='string' name='Customer Name' ordinal='34' />
+              <column datatype='string' name='Customer Reference ID' ordinal='35' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[Time]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Time</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time Zone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Time Zone]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Time Zone</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gross Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gross Sales]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Gross Sales</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discounts</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Discounts]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Discounts</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Net Sales]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Net Sales</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gift Card Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gift Card Sales]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Gift Card Sales</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tax</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tax]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Tax</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tip</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tip]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Tip</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Partial Refunds</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Partial Refunds]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Partial Refunds</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Collected</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Collected]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Total Collected</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Source]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Source</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Card</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Card]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Card</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Card Entry Methods</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Card Entry Methods]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Card Entry Methods</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cash</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cash]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Cash</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Square Gift Card</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Square Gift Card]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Square Gift Card</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Tender</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Other Tender]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Other Tender</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Tender Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Other Tender Type]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Other Tender Type</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other Tender Note</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Other Tender Note]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Other Tender Note</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fees</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fees]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Fees</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Total</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Net Total]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Net Total</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Transaction ID]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Transaction ID</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Payment ID]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Payment ID</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Card Brand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Card Brand]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Card Brand</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAN Suffix</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PAN Suffix]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>PAN Suffix</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Device Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Device Name]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Device Name</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Staff Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Staff Name]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Staff Name</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Staff ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Staff ID]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Staff ID</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Details</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Details]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Details</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Event Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Event Type]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Event Type</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dining Option</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Dining Option]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Dining Option</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer ID]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Customer ID</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer Name]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Customer Name</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Reference ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer Reference ID]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Customer Reference ID</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Device Nickname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Device Nickname]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Device Nickname</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deposit ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Deposit ID]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Deposit ID</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deposit Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Deposit Date]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Deposit Date</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deposit Details</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Deposit Details]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Deposit Details</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fee Percentage Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fee Percentage Rate]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Fee Percentage Rate</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fee Fixed Rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fee Fixed Rate]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Fee Fixed Rate</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Refund Reason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Refund Reason]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Refund Reason</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discount Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Discount Name]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Discount Name</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Transaction Status]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Transaction Status</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Card - Swiped</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Card - Swiped]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Card - Swiped</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Card - Keyed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Card - Keyed]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Card - Keyed</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wallet</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Wallet]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Wallet</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[transactions-2020-01-01-2021-01-01.csv+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Location1' datatype='string' name='[Location]' role='dimension' type='nominal' />
+      <column aggregation='Hour' datatype='datetime' name='[Time]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='transactions-2020-01-01-2021-01-01.csv' datatype='table' name='[__tableau_internal_object_id__].[transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='10000' show-hidden-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='transactions-2020-01-01-2021-01-01.csv' id='transactions-2020-01-01-2021-01-01.csv_EE4327462111408AA3A20842735B45A1'>
+            <properties context=''>
+              <relation all='true' name='transactions-2020-01-01-2021-01-01.csv+' type='union'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='Date' />
+                  <column datatype='datetime' name='Time' />
+                  <column datatype='string' name='Time Zone' />
+                  <column datatype='real' name='Gross Sales' />
+                  <column datatype='real' name='Discounts' />
+                  <column datatype='real' name='Net Sales' />
+                  <column datatype='real' name='Gift Card Sales' />
+                  <column datatype='real' name='Tax' />
+                  <column datatype='real' name='Tip' />
+                  <column datatype='real' name='Partial Refunds' />
+                  <column datatype='real' name='Total Collected' />
+                  <column datatype='string' name='Source' />
+                  <column datatype='real' name='Card' />
+                  <column datatype='string' name='Card Entry Methods' />
+                  <column datatype='real' name='Cash' />
+                  <column datatype='real' name='Square Gift Card' />
+                  <column datatype='real' name='Other Tender' />
+                  <column datatype='string' name='Other Tender Type' />
+                  <column datatype='string' name='Other Tender Note' />
+                  <column datatype='real' name='Fees' />
+                  <column datatype='real' name='Net Total' />
+                  <column datatype='string' name='Transaction ID' />
+                  <column datatype='string' name='Payment ID' />
+                  <column datatype='string' name='Card Brand' />
+                  <column datatype='integer' name='PAN Suffix' />
+                  <column datatype='string' name='Device Name' />
+                  <column datatype='string' name='Staff Name' />
+                  <column datatype='string' name='Staff ID' />
+                  <column datatype='string' name='Details' />
+                  <column datatype='string' name='Description' />
+                  <column datatype='string' name='Event Type' />
+                  <column datatype='string' name='Location' />
+                  <column datatype='string' name='Dining Option' />
+                  <column datatype='string' name='Customer ID' />
+                  <column datatype='string' name='Customer Name' />
+                  <column datatype='string' name='Customer Reference ID' />
+                  <column datatype='string' name='Device Nickname' />
+                  <column datatype='string' name='Deposit ID' />
+                  <column datatype='date' name='Deposit Date' />
+                  <column datatype='string' name='Deposit Details' />
+                  <column datatype='real' name='Fee Percentage Rate' />
+                  <column datatype='real' name='Fee Fixed Rate' />
+                  <column datatype='string' name='Refund Reason' />
+                  <column datatype='string' name='Discount Name' />
+                  <column datatype='string' name='Transaction Status' />
+                  <column datatype='real' name='Card - Swiped' />
+                  <column datatype='real' name='Card - Keyed' />
+                  <column datatype='real' name='Wallet' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='textscan.08kyp0b0tut85e1b9v2wz10rn43b' name='transactions-2020-01-01-2021-01-01.csv' table='[transactions-2020-01-01-2021-01-01#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='date' name='Date' ordinal='0' />
+                    <column datatype='datetime' name='Time' ordinal='1' />
+                    <column datatype='string' name='Time Zone' ordinal='2' />
+                    <column datatype='real' name='Gross Sales' ordinal='3' />
+                    <column datatype='real' name='Discounts' ordinal='4' />
+                    <column datatype='real' name='Net Sales' ordinal='5' />
+                    <column datatype='real' name='Gift Card Sales' ordinal='6' />
+                    <column datatype='real' name='Tax' ordinal='7' />
+                    <column datatype='real' name='Tip' ordinal='8' />
+                    <column datatype='real' name='Partial Refunds' ordinal='9' />
+                    <column datatype='real' name='Total Collected' ordinal='10' />
+                    <column datatype='string' name='Source' ordinal='11' />
+                    <column datatype='real' name='Card' ordinal='12' />
+                    <column datatype='string' name='Card Entry Methods' ordinal='13' />
+                    <column datatype='real' name='Cash' ordinal='14' />
+                    <column datatype='real' name='Square Gift Card' ordinal='15' />
+                    <column datatype='real' name='Other Tender' ordinal='16' />
+                    <column datatype='string' name='Other Tender Type' ordinal='17' />
+                    <column datatype='string' name='Other Tender Note' ordinal='18' />
+                    <column datatype='real' name='Fees' ordinal='19' />
+                    <column datatype='real' name='Net Total' ordinal='20' />
+                    <column datatype='string' name='Transaction ID' ordinal='21' />
+                    <column datatype='string' name='Payment ID' ordinal='22' />
+                    <column datatype='string' name='Card Brand' ordinal='23' />
+                    <column datatype='integer' name='PAN Suffix' ordinal='24' />
+                    <column datatype='string' name='Device Name' ordinal='25' />
+                    <column datatype='string' name='Staff Name' ordinal='26' />
+                    <column datatype='string' name='Staff ID' ordinal='27' />
+                    <column datatype='string' name='Details' ordinal='28' />
+                    <column datatype='string' name='Description' ordinal='29' />
+                    <column datatype='string' name='Event Type' ordinal='30' />
+                    <column datatype='string' name='Location' ordinal='31' />
+                    <column datatype='string' name='Dining Option' ordinal='32' />
+                    <column datatype='string' name='Customer ID' ordinal='33' />
+                    <column datatype='string' name='Customer Name' ordinal='34' />
+                    <column datatype='string' name='Customer Reference ID' ordinal='35' />
+                    <column datatype='string' name='Device Nickname' ordinal='36' />
+                    <column datatype='string' name='Deposit ID' ordinal='37' />
+                    <column datatype='date' name='Deposit Date' ordinal='38' />
+                    <column datatype='string' name='Deposit Details' ordinal='39' />
+                    <column datatype='real' name='Fee Percentage Rate' ordinal='40' />
+                    <column datatype='real' name='Fee Fixed Rate' ordinal='41' />
+                    <column datatype='string' name='Refund Reason' ordinal='42' />
+                    <column datatype='string' name='Discount Name' ordinal='43' />
+                    <column datatype='string' name='Transaction Status' ordinal='44' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.08kyp0b0tut85e1b9v2wz10rn43b' name='transactions-2019-01-01-2020-01-01.csv' table='[transactions-2019-01-01-2020-01-01#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='date' name='Date' ordinal='0' />
+                    <column datatype='datetime' name='Time' ordinal='1' />
+                    <column datatype='string' name='Time Zone' ordinal='2' />
+                    <column datatype='real' name='Gross Sales' ordinal='3' />
+                    <column datatype='real' name='Discounts' ordinal='4' />
+                    <column datatype='real' name='Net Sales' ordinal='5' />
+                    <column datatype='real' name='Gift Card Sales' ordinal='6' />
+                    <column datatype='real' name='Tax' ordinal='7' />
+                    <column datatype='real' name='Tip' ordinal='8' />
+                    <column datatype='real' name='Partial Refunds' ordinal='9' />
+                    <column datatype='real' name='Total Collected' ordinal='10' />
+                    <column datatype='string' name='Source' ordinal='11' />
+                    <column datatype='real' name='Card' ordinal='12' />
+                    <column datatype='string' name='Card Entry Methods' ordinal='13' />
+                    <column datatype='real' name='Cash' ordinal='14' />
+                    <column datatype='real' name='Square Gift Card' ordinal='15' />
+                    <column datatype='real' name='Other Tender' ordinal='16' />
+                    <column datatype='string' name='Other Tender Type' ordinal='17' />
+                    <column datatype='string' name='Other Tender Note' ordinal='18' />
+                    <column datatype='real' name='Fees' ordinal='19' />
+                    <column datatype='real' name='Net Total' ordinal='20' />
+                    <column datatype='string' name='Transaction ID' ordinal='21' />
+                    <column datatype='string' name='Payment ID' ordinal='22' />
+                    <column datatype='string' name='Card Brand' ordinal='23' />
+                    <column datatype='integer' name='PAN Suffix' ordinal='24' />
+                    <column datatype='string' name='Device Name' ordinal='25' />
+                    <column datatype='string' name='Staff Name' ordinal='26' />
+                    <column datatype='string' name='Staff ID' ordinal='27' />
+                    <column datatype='string' name='Details' ordinal='28' />
+                    <column datatype='string' name='Description' ordinal='29' />
+                    <column datatype='string' name='Event Type' ordinal='30' />
+                    <column datatype='string' name='Location' ordinal='31' />
+                    <column datatype='string' name='Dining Option' ordinal='32' />
+                    <column datatype='string' name='Customer ID' ordinal='33' />
+                    <column datatype='string' name='Customer Name' ordinal='34' />
+                    <column datatype='string' name='Customer Reference ID' ordinal='35' />
+                    <column datatype='string' name='Device Nickname' ordinal='36' />
+                    <column datatype='string' name='Deposit ID' ordinal='37' />
+                    <column datatype='date' name='Deposit Date' ordinal='38' />
+                    <column datatype='string' name='Deposit Details' ordinal='39' />
+                    <column datatype='real' name='Fee Percentage Rate' ordinal='40' />
+                    <column datatype='real' name='Fee Fixed Rate' ordinal='41' />
+                    <column datatype='string' name='Refund Reason' ordinal='42' />
+                    <column datatype='string' name='Discount Name' ordinal='43' />
+                    <column datatype='string' name='Transaction Status' ordinal='44' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.08kyp0b0tut85e1b9v2wz10rn43b' name='transactions-2018-01-01-2019-01-01.csv' table='[transactions-2018-01-01-2019-01-01#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='date' name='Date' ordinal='0' />
+                    <column datatype='datetime' name='Time' ordinal='1' />
+                    <column datatype='string' name='Time Zone' ordinal='2' />
+                    <column datatype='real' name='Gross Sales' ordinal='3' />
+                    <column datatype='real' name='Discounts' ordinal='4' />
+                    <column datatype='real' name='Net Sales' ordinal='5' />
+                    <column datatype='real' name='Gift Card Sales' ordinal='6' />
+                    <column datatype='real' name='Tax' ordinal='7' />
+                    <column datatype='real' name='Tip' ordinal='8' />
+                    <column datatype='real' name='Partial Refunds' ordinal='9' />
+                    <column datatype='real' name='Total Collected' ordinal='10' />
+                    <column datatype='string' name='Source' ordinal='11' />
+                    <column datatype='real' name='Card' ordinal='12' />
+                    <column datatype='string' name='Card Entry Methods' ordinal='13' />
+                    <column datatype='real' name='Cash' ordinal='14' />
+                    <column datatype='real' name='Square Gift Card' ordinal='15' />
+                    <column datatype='real' name='Other Tender' ordinal='16' />
+                    <column datatype='string' name='Other Tender Type' ordinal='17' />
+                    <column datatype='string' name='Other Tender Note' ordinal='18' />
+                    <column datatype='real' name='Fees' ordinal='19' />
+                    <column datatype='real' name='Net Total' ordinal='20' />
+                    <column datatype='string' name='Transaction ID' ordinal='21' />
+                    <column datatype='string' name='Payment ID' ordinal='22' />
+                    <column datatype='string' name='Card Brand' ordinal='23' />
+                    <column datatype='integer' name='PAN Suffix' ordinal='24' />
+                    <column datatype='string' name='Device Name' ordinal='25' />
+                    <column datatype='string' name='Staff Name' ordinal='26' />
+                    <column datatype='string' name='Staff ID' ordinal='27' />
+                    <column datatype='string' name='Details' ordinal='28' />
+                    <column datatype='string' name='Description' ordinal='29' />
+                    <column datatype='string' name='Event Type' ordinal='30' />
+                    <column datatype='string' name='Location' ordinal='31' />
+                    <column datatype='string' name='Dining Option' ordinal='32' />
+                    <column datatype='string' name='Customer ID' ordinal='33' />
+                    <column datatype='string' name='Customer Name' ordinal='34' />
+                    <column datatype='string' name='Customer Reference ID' ordinal='35' />
+                    <column datatype='string' name='Device Nickname' ordinal='36' />
+                    <column datatype='string' name='Deposit ID' ordinal='37' />
+                    <column datatype='date' name='Deposit Date' ordinal='38' />
+                    <column datatype='string' name='Deposit Details' ordinal='39' />
+                    <column datatype='real' name='Fee Percentage Rate' ordinal='40' />
+                    <column datatype='real' name='Fee Fixed Rate' ordinal='41' />
+                    <column datatype='string' name='Refund Reason' ordinal='42' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.08kyp0b0tut85e1b9v2wz10rn43b' name='transactions-2017-01-01-2018-01-01.csv' table='[transactions-2017-01-01-2018-01-01#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='date' name='Date' ordinal='0' />
+                    <column datatype='datetime' name='Time' ordinal='1' />
+                    <column datatype='string' name='Time Zone' ordinal='2' />
+                    <column datatype='real' name='Gross Sales' ordinal='3' />
+                    <column datatype='real' name='Discounts' ordinal='4' />
+                    <column datatype='real' name='Net Sales' ordinal='5' />
+                    <column datatype='real' name='Gift Card Sales' ordinal='6' />
+                    <column datatype='real' name='Tax' ordinal='7' />
+                    <column datatype='real' name='Tip' ordinal='8' />
+                    <column datatype='real' name='Partial Refunds' ordinal='9' />
+                    <column datatype='real' name='Total Collected' ordinal='10' />
+                    <column datatype='string' name='Source' ordinal='11' />
+                    <column datatype='real' name='Card' ordinal='12' />
+                    <column datatype='string' name='Card Entry Methods' ordinal='13' />
+                    <column datatype='real' name='Cash' ordinal='14' />
+                    <column datatype='real' name='Square Gift Card' ordinal='15' />
+                    <column datatype='real' name='Other Tender' ordinal='16' />
+                    <column datatype='string' name='Other Tender Type' ordinal='17' />
+                    <column datatype='string' name='Other Tender Note' ordinal='18' />
+                    <column datatype='real' name='Fees' ordinal='19' />
+                    <column datatype='real' name='Net Total' ordinal='20' />
+                    <column datatype='string' name='Transaction ID' ordinal='21' />
+                    <column datatype='string' name='Payment ID' ordinal='22' />
+                    <column datatype='string' name='Card Brand' ordinal='23' />
+                    <column datatype='integer' name='PAN Suffix' ordinal='24' />
+                    <column datatype='string' name='Device Name' ordinal='25' />
+                    <column datatype='string' name='Staff Name' ordinal='26' />
+                    <column datatype='string' name='Staff ID' ordinal='27' />
+                    <column datatype='string' name='Details' ordinal='28' />
+                    <column datatype='string' name='Description' ordinal='29' />
+                    <column datatype='string' name='Event Type' ordinal='30' />
+                    <column datatype='string' name='Location' ordinal='31' />
+                    <column datatype='string' name='Dining Option' ordinal='32' />
+                    <column datatype='string' name='Customer ID' ordinal='33' />
+                    <column datatype='string' name='Customer Name' ordinal='34' />
+                    <column datatype='string' name='Customer Reference ID' ordinal='35' />
+                    <column datatype='string' name='Device Nickname' ordinal='36' />
+                    <column datatype='string' name='Deposit ID' ordinal='37' />
+                    <column datatype='date' name='Deposit Date' ordinal='38' />
+                    <column datatype='string' name='Deposit Details' ordinal='39' />
+                    <column datatype='real' name='Fee Percentage Rate' ordinal='40' />
+                    <column datatype='real' name='Fee Fixed Rate' ordinal='41' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.08kyp0b0tut85e1b9v2wz10rn43b' name='transactions-2016-01-01-2017-01-01.csv' table='[transactions-2016-01-01-2017-01-01#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='date' name='Date' ordinal='0' />
+                    <column datatype='datetime' name='Time' ordinal='1' />
+                    <column datatype='string' name='Time Zone' ordinal='2' />
+                    <column datatype='real' name='Gross Sales' ordinal='3' />
+                    <column datatype='real' name='Discounts' ordinal='4' />
+                    <column datatype='real' name='Net Sales' ordinal='5' />
+                    <column datatype='real' name='Gift Card Sales' ordinal='6' />
+                    <column datatype='real' name='Tax' ordinal='7' />
+                    <column datatype='real' name='Tip' ordinal='8' />
+                    <column datatype='real' name='Partial Refunds' ordinal='9' />
+                    <column datatype='real' name='Total Collected' ordinal='10' />
+                    <column datatype='string' name='Source' ordinal='11' />
+                    <column datatype='real' name='Card' ordinal='12' />
+                    <column datatype='string' name='Card Entry Methods' ordinal='13' />
+                    <column datatype='real' name='Cash' ordinal='14' />
+                    <column datatype='real' name='Square Gift Card' ordinal='15' />
+                    <column datatype='real' name='Other Tender' ordinal='16' />
+                    <column datatype='string' name='Other Tender Type' ordinal='17' />
+                    <column datatype='string' name='Other Tender Note' ordinal='18' />
+                    <column datatype='real' name='Fees' ordinal='19' />
+                    <column datatype='real' name='Net Total' ordinal='20' />
+                    <column datatype='string' name='Transaction ID' ordinal='21' />
+                    <column datatype='string' name='Payment ID' ordinal='22' />
+                    <column datatype='string' name='Card Brand' ordinal='23' />
+                    <column datatype='integer' name='PAN Suffix' ordinal='24' />
+                    <column datatype='string' name='Device Name' ordinal='25' />
+                    <column datatype='string' name='Staff Name' ordinal='26' />
+                    <column datatype='string' name='Staff ID' ordinal='27' />
+                    <column datatype='string' name='Details' ordinal='28' />
+                    <column datatype='string' name='Description' ordinal='29' />
+                    <column datatype='string' name='Event Type' ordinal='30' />
+                    <column datatype='string' name='Location' ordinal='31' />
+                    <column datatype='string' name='Dining Option' ordinal='32' />
+                    <column datatype='string' name='Customer ID' ordinal='33' />
+                    <column datatype='string' name='Customer Name' ordinal='34' />
+                    <column datatype='string' name='Customer Reference ID' ordinal='35' />
+                    <column datatype='string' name='Device Nickname' ordinal='36' />
+                    <column datatype='string' name='Deposit ID' ordinal='37' />
+                    <column datatype='date' name='Deposit Date' ordinal='38' />
+                    <column datatype='string' name='Deposit Details' ordinal='39' />
+                    <column datatype='real' name='Fee Percentage Rate' ordinal='40' />
+                    <column datatype='real' name='Fee Fixed Rate' ordinal='41' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.08kyp0b0tut85e1b9v2wz10rn43b' name='transactions-2015-01-01-2016-01-01.csv' table='[transactions-2015-01-01-2016-01-01#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='date' name='Date' ordinal='0' />
+                    <column datatype='datetime' name='Time' ordinal='1' />
+                    <column datatype='string' name='Time Zone' ordinal='2' />
+                    <column datatype='real' name='Gross Sales' ordinal='3' />
+                    <column datatype='real' name='Discounts' ordinal='4' />
+                    <column datatype='real' name='Net Sales' ordinal='5' />
+                    <column datatype='real' name='Gift Card Sales' ordinal='6' />
+                    <column datatype='real' name='Tax' ordinal='7' />
+                    <column datatype='real' name='Tip' ordinal='8' />
+                    <column datatype='real' name='Partial Refunds' ordinal='9' />
+                    <column datatype='real' name='Total Collected' ordinal='10' />
+                    <column datatype='real' name='Card - Swiped' ordinal='11' />
+                    <column datatype='real' name='Card - Keyed' ordinal='12' />
+                    <column datatype='real' name='Cash' ordinal='13' />
+                    <column datatype='real' name='Wallet' ordinal='14' />
+                    <column datatype='real' name='Square Gift Card' ordinal='15' />
+                    <column datatype='real' name='Other Tender' ordinal='16' />
+                    <column datatype='string' name='Other Tender Type' ordinal='17' />
+                    <column datatype='string' name='Other Tender Note' ordinal='18' />
+                    <column datatype='real' name='Fees' ordinal='19' />
+                    <column datatype='real' name='Net Total' ordinal='20' />
+                    <column datatype='string' name='Transaction ID' ordinal='21' />
+                    <column datatype='string' name='Payment ID' ordinal='22' />
+                    <column datatype='string' name='Card Brand' ordinal='23' />
+                    <column datatype='integer' name='PAN Suffix' ordinal='24' />
+                    <column datatype='string' name='Device Name' ordinal='25' />
+                    <column datatype='string' name='Staff Name' ordinal='26' />
+                    <column datatype='string' name='Staff ID' ordinal='27' />
+                    <column datatype='string' name='Details' ordinal='28' />
+                    <column datatype='string' name='Description' ordinal='29' />
+                    <column datatype='string' name='Event Type' ordinal='30' />
+                    <column datatype='string' name='Location' ordinal='31' />
+                    <column datatype='string' name='Dining Option' ordinal='32' />
+                    <column datatype='string' name='Customer ID' ordinal='33' />
+                    <column datatype='string' name='Customer Name' ordinal='34' />
+                    <column datatype='string' name='Customer Reference ID' ordinal='35' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='transactions-2020-01-01-2021-01-01' name='federated.0m07tkw07lsvxv1eazztx0hppja0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0m07tkw07lsvxv1eazztx0hppja0'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Net Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Net Sales]' derivation='Sum' name='[sum:Net Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0m07tkw07lsvxv1eazztx0hppja0].[sum:Net Sales:qk]</rows>
+        <cols>[federated.0m07tkw07lsvxv1eazztx0hppja0].[yr:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{FA47D147-96D0-4991-8951-42CCDB30F514}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0m07tkw07lsvxv1eazztx0hppja0].[none:Location:nk]</field>
+            <field>[federated.0m07tkw07lsvxv1eazztx0hppja0].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BCC34A66-9FE2-4918-B69A-DEE1FD77834C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
